@@ -1,0 +1,38 @@
+{
+  "name": "claw-gateway",
+  "version": "1.0.0",
+  "description": "StudioX Claw — omnichannel AI agent gateway",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "node --loader ts-node/esm --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "register-commands": "node --loader ts-node/esm scripts/register-commands.ts"
+  },
+  "dependencies": {
+    "discord.js": "^14.16.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "firebase-admin": "^13.0.0",
+    "grammy": "^1.31.0",
+    "gray-matter": "^4.0.3",
+    "node-cron": "^3.0.3",
+    "node-schedule": "^2.1.1",
+    "ws": "^8.18.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/node-cron": "^3.0.0",
+    "@types/node-schedule": "^2.1.0",
+    "@types/ws": "^8.5.0",
+    "strip-comments": "^2.0.1",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  }
+}
